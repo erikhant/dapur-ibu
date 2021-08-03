@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-category::before,
+.top-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.643) 0%,
+    rgba(0, 0, 0, 0.075) 100%
+  );
+}
+
+.body-category:hover p {
+  background-color: #f3f4f6;
+  color: #111827;
+  transition: all 250ms linear 0s;
+}
+
+.next,
+.prev {
+  /* background: #9fe6a0; */
+  color: #4b5563;
+}
+
+.next:disabled,
+.prev:disabled {
+  background: #e5e7eb;
+  color: #d1d5db;
+  box-shadow: none;
+  border: none;
+}
+
+.swiper-pagination {
+  z-index: 10;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 10px !important;
+  height: 10px !important;
+  background: transparent !important;
+  border: 2px solid #4aa96c;
+}
+
+@media screen and (max-width: 728px) {
+  .swiper-pagination-bullet {
+    background: rgba(247, 247, 247, 0.865) !important;
+  }
+}
