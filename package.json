@@ -1,7 +1,10 @@
 {
   "name": "dapuribu",
   "version": "0.1.0",
+  "description": "recipe app",
   "private": true,
+  "author": "erikhant",
+  "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "@heroicons/react": "^1.0.1",
